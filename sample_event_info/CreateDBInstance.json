@@ -1,0 +1,65 @@
+[
+    {
+        "acsRegion": "ap-northeast-1",
+        "apiVersion": "2014-08-15",
+        "eventId": "0C15BFCB-5B43-4945-ADFA-86DF8489B0D2",
+        "eventName": "CreateDBInstance",
+        "eventSource": "rds.ap-northeast-1.aliyuncs.com",
+        "eventTime": "2019-04-18T08:35:03Z",
+        "eventType": "ApiCall",
+        "eventVersion": "1",
+        "referencedResources": {
+            "VSwitch": [
+                "vsw-6we*******2tyomki"
+            ],
+            "DBInstance": [
+                "rm-e9b*****1nnc8s"
+            ],
+            "VPC": [
+                "vpc-6wednyvabn6bcu6hbrlfh"
+            ]
+        },
+        "requestId": "0C15BFCB-5B43-4945-ADFA-86DF8489B0D2",
+        "requestParameters": {
+            "BigDipperSource": {},
+            "DBInstanceNetType": "Intranet",
+            "Quantity": 1,
+            "DBInstanceClass": "rds.mysql.t1.small",
+            "ZoneId": "ap-northeast-1MAZ1(a,b)",
+            "InstanceNetworkType": "VPC",
+            "AutoRenew": false,
+            "VSwitchId": "vsw-6we2x2sljmg7k22tyomki",
+            "DBInstanceStorage": 5,
+            "InstanceUsedType": 0,
+            "Engine": "MySQL",
+            "AutoPay": true,
+            "VPCId": "vpc-6wed*****u6hbrlfh",
+            "RequestId": "0C15BFCB-5B43-4945-ADFA-86DF8489B0D2",
+            "RegionId": "ap-northeast-1",
+            "NodeType": "HighAvailability",
+            "OrderType": "BUY",
+            "EngineVersion": 5.6,
+            "DBInstanceStorageType": "local_ssd",
+            "SecurityIPList": "127.0.0.1"
+        },
+        "responseElements": {
+            "RequestId": "0C15BFCB-5B43-4945-ADFA-86DF8489B0D2",
+            "DBInstanceId": "rm-e9b*****nnc8s",
+            "OrderId": 500679201990891
+        },
+        "serviceName": "Rds",
+        "sourceIpAddress": "126.35.1.41",
+        "userIdentity": {
+            "accountId": "5644*******921",
+            "principalId": "23430******98168",
+            "sessionContext": {
+                "attributes": {
+                    "creationDate": "2019-04-18T08:35:03Z",
+                    "mfaAuthenticated": "false"
+                }
+            },
+            "type": "ram-user",
+            "userName": "*******"
+        }
+    }
+]
