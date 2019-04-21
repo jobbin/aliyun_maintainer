@@ -20,14 +20,14 @@ Resources:
       Policies:
         - AliyunECSFullAccess
         - AliyunOSSFullAccess
-    add_tag_ecs_instance: # Your function compute function
+    add_tag_ecs_rds_instance: # Your function compute function
       Type: 'Aliyun::Serverless::Function'
       Properties:
-        Handler: index.handler
+        Handler: add_tag_to_ecs_rds_instance.handler
         Runtime: python3
         Timeout: 60
-        CodeUri: 'index.py'
+        CodeUri: 'add_tag_to_ecs_rds_instance.py'
         EnvironmentVariables:
           'ACCESS_KEY_ID': '<Your Access Key Id>' #  [ Warning! ] Do not push your key info to Github
           'ACCESS_KEY_SECRET': '<Your Secret Key>' # [ Warning! ] Do not push your key info to Github
-          'TAG_NAME': 'Owner'
+          'TAG_NAME': 'owner'
